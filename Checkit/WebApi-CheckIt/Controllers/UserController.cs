@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
 
 
-namespace Checkit.Controllers
+namespace CheckIt.WebApi_CheckIt.Controllers
 {
     public class UserController : ApiController
     {
@@ -34,6 +35,20 @@ namespace Checkit.Controllers
                 return list[id];
             }
             return "Index not found! Try again (0-3)";
+        }
+
+        [HttpGet]
+        [Route("api/user/login")]
+        public IHttpActionResult CheckItLogin()
+        {
+            return Redirect("https://kfc-sso.com/#/login"); 
+        }
+
+        [HttpGet]
+        [Route("api/user/register")]
+        public IHttpActionResult CheckItRegister()
+        {
+            return Redirect("https://kfc-sso.com/#/register");
         }
         
         /*

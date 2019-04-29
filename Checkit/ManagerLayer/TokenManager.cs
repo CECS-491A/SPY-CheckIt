@@ -192,7 +192,11 @@ namespace CheckIt.ManagerLayer
             return userService.GetUser(new Guid(userID));
         }
 
-
+        /// <summary>
+        /// Extract user's ID from jwt.
+        /// </summary>
+        /// <param name="jwt"></param>
+        /// <returns></returns>
         private Guid ExtractUserID(string jwt)
         {
             JwtSecurityToken token = new JwtSecurityToken(jwt);

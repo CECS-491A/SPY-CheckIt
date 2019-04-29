@@ -46,6 +46,11 @@ namespace CheckIt.ServiceLayer
             return userRepo.GetUserbyEmail(email);
         }
 
+        public User GetSSOUser(Guid ssoID)
+        {
+            return userRepo.GetUserbySSOID(ssoID);
+        }
+
         public List<string> ExtractActions(User user)
         {
             List<string> actions = new List<string>();

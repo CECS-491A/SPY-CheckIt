@@ -35,7 +35,7 @@
 
 <script>  
 import axios from "axios";
-const API_URL = 'Backend';
+const API_URL = 'http://localhost:58881';
 
 export default {  
   data() {
