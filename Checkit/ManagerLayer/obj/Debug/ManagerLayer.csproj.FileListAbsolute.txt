@@ -38,7 +38,6 @@ D:\School\Senior Project\SPY-CheckIt\Checkit\ManagerLayer\bin\Debug\Microsoft.Id
 D:\School\Senior Project\SPY-CheckIt\Checkit\ManagerLayer\bin\Debug\Newtonsoft.Json.dll
 D:\School\Senior Project\SPY-CheckIt\Checkit\ManagerLayer\bin\Debug\ServiceLayer.exe
 D:\School\Senior Project\SPY-CheckIt\Checkit\ManagerLayer\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
-D:\School\Senior Project\SPY-CheckIt\Checkit\ManagerLayer\bin\Debug\EntityFramework.dll
 D:\School\Senior Project\SPY-CheckIt\Checkit\ManagerLayer\bin\Debug\DataAccessLayer.pdb
 D:\School\Senior Project\SPY-CheckIt\Checkit\ManagerLayer\bin\Debug\DataAccessLayer.exe.config
 D:\School\Senior Project\SPY-CheckIt\Checkit\ManagerLayer\bin\Debug\ServiceLayer.pdb

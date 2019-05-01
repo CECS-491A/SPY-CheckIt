@@ -13,7 +13,11 @@ namespace WebApi_CheckIt.Controllers
 {
     public class SSOController : ApiController
     {
-
+        /// <summary>
+        /// Route called by SSO when they launch CheckIt
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("sso/launchapp")]
         public HttpResponseMessage SSOLaunch([FromBody] LoginDTO request)
@@ -49,13 +53,14 @@ namespace WebApi_CheckIt.Controllers
                     string token = lm.SSOLogin(ssoID, request.email, request.timeStamp, request.signature);
 
                     //Create Redirect response
-                    string redirectUrl = "http://www.checkit.gq/#/login/" + token;
+                    string redirectUrl = "http://www.checkit.gq/#/launch?token=" + token;
                     response = Request.CreateResponse(HttpStatusCode.Moved);
                     response.Headers.Location = new Uri(redirectUrl);
                     return response;
                 }
                 catch (InvalidRequestSignature e)
                 {
+                    //Send the unathorized rsponse with message of exception
                     response.Content = new StringContent(e.Message);
                     response.StatusCode = HttpStatusCode.Unauthorized;
                     return response;

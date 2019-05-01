@@ -60,7 +60,7 @@ namespace CheckIt.ServiceLayer
             }
             return actions;
         }
-
+        //TODO: implement new UserRepo
         /// <summary>
         /// adds a new user to the DB
         /// </summary>
@@ -78,6 +78,7 @@ namespace CheckIt.ServiceLayer
             return true;
         }
 
+        //TODO: implement new UserRepo
         /// <summary>
         /// updates user in db
         /// </summary>
@@ -96,6 +97,7 @@ namespace CheckIt.ServiceLayer
             return true;
         }
 
+        //TODO: implement new UserRepo
         /// <summary>
         /// removes user from db
         /// </summary>
